@@ -13,7 +13,6 @@ module register_file #(
 );
     reg [width-1:0] register [0:31];
     
-    // Initialize all registers to 0 on reset
     integer i;
     always @(posedge clk or negedge reset) begin
         if (!reset) begin

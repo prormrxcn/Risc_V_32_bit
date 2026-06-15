@@ -24,7 +24,7 @@ module imm_gen(
                           instruction[30:21], 1'b0};
             
             3'b101: // U-type (LUI, AUIPC)
-                imm_ext = {instruction[31:12], 12'b0};  // Shifted left 12 bits automatically
+                imm_ext = {instruction[31:12], 12'b0};  
             
             default: // 3'b000 or others
                 imm_ext = 32'b0;
