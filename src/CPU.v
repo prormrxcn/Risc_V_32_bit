@@ -1,10 +1,7 @@
 module riscv_cpu #(
     parameter WIDTH = 32
 ) (
-//    `ifdef USE_POWER_SUPPLY
-//        inout    vccd1,
-//        inout    vssd1,
-//    `endif 
+
     input wire clk,
     input wire reset,
     
